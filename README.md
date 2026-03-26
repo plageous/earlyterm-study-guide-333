@@ -50,4 +50,5 @@ Find the second-largest number in:
 - Java derusting
 - Javapalooza
 - Time Complexities Table
-- Extra Credit Java Review
+- Reading Java Practice
+- CodeStepByStep Java Exercises
