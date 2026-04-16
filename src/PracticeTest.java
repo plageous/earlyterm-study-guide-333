@@ -4,7 +4,6 @@ import org.junit.jupiter.api.Test;
 
 public class PracticeTest {
 
-    // TODO: Make more tests for maxDiff
     @Test
     void testSingleNumber() {
         // Arr
@@ -29,8 +28,6 @@ public class PracticeTest {
         assertEquals(14, actual);
     }
     
-
-    // TODO: Make tests for each problem you solve
     @Test
     void testLargest() {
         // Arrange
