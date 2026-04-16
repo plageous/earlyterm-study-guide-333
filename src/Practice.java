@@ -24,6 +24,12 @@ public class Practice {
     // structures. But use a different data structure for each method. For example,
     // do maxDiff with an array, the next question with a Set, etc.
 
+    /**
+    Returns the largest string in an ArrayList of Strings.
+    @param stringList a non-empty, non-null ArrayList of Strings
+    @return the String with the longest length.
+    */
+
     public static String largestWord(ArrayList<String> stringList) {
         int index = 0;
         for (String string : stringList) { if (string.length() >= stringList.get(index).length()) { index = stringList.indexOf(string); }}
