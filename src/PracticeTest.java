@@ -6,6 +6,17 @@ public class PracticeTest {
 
     // TODO: Make more tests for maxDiff
     @Test
+    void testSingleNumber() {
+        // Arr
+        int[] number = {1};
+        // Act
+        int actual = Practice.maxDiff(number);
+        // Assert
+        // should be 0
+        assertEquals(0, actual);
+    }
+
+    @Test
     void testMaxDiffPositiveAndNegative() {
         // Arrange
         int[] numbers = {8, -2, 9, -5};

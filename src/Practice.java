@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class Practice {
     /**
      * Returns the difference between the largest and smallest integer in an array.
@@ -21,4 +23,10 @@ public class Practice {
     // For each method you are only required to implement it for one of the data
     // structures. But use a different data structure for each method. For example,
     // do maxDiff with an array, the next question with a Set, etc.
+
+    public static String largestWord(ArrayList<String> stringList) {
+        int index = 0;
+        for (String string : stringList) { if (string.length() >= stringList.get(index).length()) { index = stringList.indexOf(string); }}
+        return stringList.get(index);
+    }
 }
