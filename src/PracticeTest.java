@@ -1,5 +1,5 @@
+import java.util.*;
 import static org.junit.Assert.*;
-
 import org.junit.jupiter.api.Test;
 
 public class PracticeTest {
@@ -32,7 +32,19 @@ public class PracticeTest {
 
     // TODO: Make tests for each problem you solve
     @Test
-    void testLargest 
+    void testLargest() {
+        // Arrange
+        ArrayList<String> strings = new ArrayList<>();
+        strings.add("work");
+        strings.add("abacus");
+        strings.add("proximity");
+        strings.add("juice");
+        strings.add("cat");
+        // Act
+        String actual = Practice.largestWord(strings);
+        // Assert
+        assertEquals(strings.get(2).length(), actual.length());
+    }
 }
 
 
