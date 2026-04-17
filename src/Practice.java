@@ -43,4 +43,18 @@ public class Practice {
         for (String word : stringSet) { if (word.length() > n && word.length() < m) { validWords++; }}
         return validWords;
     }
+
+    /**
+     * @param intMap a non-empty, non-null Map of integers.
+     * @return the difference between the amount of even keys and the amount of odd keys as an integer.
+     */
+    public static int oddEvenDifference(Map<Integer, Integer> intMap) {
+        int odd = 0;
+        int even = 0;
+        for (int i : intMap.keySet()) {
+            if (i % 2 == 0) { even++; }
+            if (i % 2 != 0) { odd++; }
+        }
+        return even - odd;
+    }
 }

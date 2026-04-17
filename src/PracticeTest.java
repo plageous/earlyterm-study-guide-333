@@ -68,6 +68,22 @@ public class PracticeTest {
         // Assert
         assertEquals(0, actual);
     }
+
+    @Test
+    void testOddEvenDifferenceWithNegatives() {
+        // Arrange
+        Map<Integer, Integer> testMap = new HashMap<Integer,Integer>();
+        testMap.put(1, 0);
+        testMap.put(-2, 0);
+        testMap.put(6, 0);
+        testMap.put(4, 0);
+        testMap.put(14, 0);
+        testMap.put(-7, 0);
+        // Act
+        int actual = Practice.oddEvenDifference(testMap);
+        //Assert
+        assertEquals(2, actual);
+    }
 }
 
 
