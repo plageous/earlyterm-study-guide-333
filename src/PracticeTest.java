@@ -84,6 +84,22 @@ public class PracticeTest {
         //Assert
         assertEquals(2, actual);
     }
+
+    @Test
+    void testSecondLargestWithNegativeElements() {
+        // Arrange
+        Map<Integer, Integer> testMap = new HashMap<Integer,Integer>();
+        testMap.put(1, 1);
+        testMap.put(-2, -2);
+        testMap.put(6, 6);
+        testMap.put(4, 4);
+        testMap.put(14, 14);
+        testMap.put(-7, -7);
+        // Act
+        int actual = Practice.secondLargest(testMap);
+        // Assert
+        assertEquals(6, actual);
+    }
 }
 
 
