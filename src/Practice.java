@@ -57,4 +57,13 @@ public class Practice {
         }
         return even - odd;
     }
+
+    public static int secondLargest(Map<Integer, Integer> intMap) {
+        int largest = 0;
+        int secondLargest = 0;
+        for (int i : intMap.values()) {
+            if (i > largest) { secondLargest = largest; largest = i; }
+        }
+        return secondLargest;
+    }
 }
