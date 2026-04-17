@@ -38,7 +38,7 @@ public class Practice {
      * @param n an int representing a minimum.
      * @return the amount of words with length between m and n represented by an integer.
      */
-    public static int mnWords(Set<String> stringSet, int m, int n) {
+    public static int mnWords(Set<String> stringSet, int n, int m) {
         int validWords = 0;
         for (String word : stringSet) { if (word.length() > n && word.length() < m) { validWords++; }}
         return validWords;

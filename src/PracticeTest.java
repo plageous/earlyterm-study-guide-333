@@ -43,7 +43,31 @@ public class PracticeTest {
         assertEquals(strings.get(2).length(), actual.length());
     } 
 
-    
+    @Test
+    void testMNWordsOne() {
+        // Arrange
+        Set<String> testSet = new HashSet<>();
+        testSet.add("funk");
+        testSet.add("sink");
+        testSet.add("guitar");
+        // Act
+        int actual = Practice.mnWords(testSet, 5, 7);
+        // Assert
+        assertEquals(1, actual);
+    }
+
+    @Test
+    void testMNWordsNone() {
+        // Arrange
+        Set<String> testSet = new HashSet<>();
+        testSet.add("funk");
+        testSet.add("sink");
+        testSet.add("guitar");
+        // Act
+        int actual = Practice.mnWords(testSet, 8, 9);
+        // Assert
+        assertEquals(0, actual);
+    }
 }
 
 
