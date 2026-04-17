@@ -45,7 +45,7 @@ public class Practice {
     }
 
     /**
-     * @param intMap a non-empty, non-null Map of integers.
+     * @param intMap a non-empty, non-null Map of integers for keys and values.
      * @return the difference between the amount of even keys and the amount of odd keys as an integer.
      */
     public static int oddEvenDifference(Map<Integer, Integer> intMap) {
@@ -58,12 +58,14 @@ public class Practice {
         return even - odd;
     }
 
+    /**
+     * @param intMap a non-empty, non-null Map with integers for keys and values.
+     * @return the second largest value in intMap. Returns 0 if there is only one key/value pair in intMap.
+     */
     public static int secondLargest(Map<Integer, Integer> intMap) {
         int largest = 0;
         int secondLargest = 0;
-        for (int i : intMap.values()) {
-            if (i > largest) { secondLargest = largest; largest = i; }
-        }
+        for (int i : intMap.values()) { if (i > largest) { secondLargest = largest; largest = i; }}
         return secondLargest;
     }
 }
